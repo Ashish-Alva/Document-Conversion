@@ -1,9 +1,9 @@
-node_modules
-.env
+**/node_modules
+**/.env
+**/__pycache__
 backend/uploads/uploaded
 backend/uploads/converted
 frontend/build
-__pycache__
 .git
 .gitignore
 README.md
