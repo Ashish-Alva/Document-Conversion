@@ -1,13 +1,27 @@
+FROM node:20-alpine AS frontend-build
+
+WORKDIR /frontend
+
+COPY frontend/package*.json ./
+RUN npm install
+
+COPY frontend/ .
+
+RUN npm run build
+
+# Backend
 FROM node:20-alpine
 
-WORKDIR /app
+WORKDIR /backend
 
-COPY package*.json ./
+COPY backend/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY backend/ .
 
-EXPOSE 3000
+COPY --from=frontend-build /frontend/build ./public
 
-CMD ["npm", "start"]
+EXPOSE 5000
+
+CMD ["node", "server.js"]
