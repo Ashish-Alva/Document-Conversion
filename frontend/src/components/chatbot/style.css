@@ -1,0 +1,177 @@
+/*  Floating Chat Button */
+#chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    border-radius: 50%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    color: rgb(148, 64, 64);
+    font-size: 18px;
+    font-weight: bold;
+ 
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+}
+ 
+#chatButton:hover {
+    transform: scale(1.1);
+}
+ 
+/*  Chat Container */
+#chatContainer {
+    position: fixed !important;
+    bottom: 95px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+ 
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+ 
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+ 
+/*  Header */
+#chatHeader {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,123,255,0.9);
+}
+ 
+/*  Chat Area */
+#chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+ 
+/*  Messages */
+.msg {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 80%;
+    font-size: 14px;
+}
+ 
+/*  User */
+.user {
+    background: rgba(0,123,255,0.9);
+    color: white;
+    margin-left: auto;
+}
+ 
+/*  Bot */
+.bot {
+    background: rgba(255,255,255,0.8);
+    color: black;
+}
+ 
+/*  Suggestions */
+#suggestions {
+    padding: 5px;
+    max-height: 80px;
+    overflow-y: auto;
+}
+ 
+.suggest-btn {
+    padding: 6px 10px;
+    margin: 3px;
+    border-radius: 20px;
+    background: rgba(0,123,255,0.8);
+    color: rgb(196, 104, 104);
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+ 
+.suggest-btn:hover {
+    background: #007bff;
+    transform: scale(1.05);
+}
+ 
+/*  Actions */
+#chatActions {
+    padding: 6px 8px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+/*  Clear Button */
+#clearChatBtn {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+ 
+#clearChatBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+ 
+/*  Input Area */
+#inputArea {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+ 
+/* Input */
+#userInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: grey;
+    font-size: 13px;
+}
+ 
+/*  Buttons */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+ 
+/*  Send Button */
+.btn {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    border-radius: 8px;   /* 🔥 instead of weird shape */
+    padding: 8px 12px;
+}
+ 
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,123,255,0.4);
+}

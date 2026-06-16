@@ -1,0 +1,9 @@
+node_modules
+.env
+backend/uploads/uploaded
+backend/uploads/converted
+frontend/build
+__pycache__
+.git
+.gitignore
+README.md

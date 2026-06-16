@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Uploads & Temp
+backend/uploads/uploaded/*
+backend/uploads/converted/*
+!backend/uploads/uploaded/.gitkeep
+!backend/uploads/converted/.gitkeep
+backend/test.txt
+backend/test.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# React
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+mammoth
+xhtml2pdf
+pdf2docx
+reportlab
+Pillow
+pdf2image
